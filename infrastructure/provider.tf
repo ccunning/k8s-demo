@@ -9,7 +9,3 @@ terraform {
 
 provider "digitalocean" {
 }
-
-data "digitalocean_ssh_key" "terraform-key" {
-  name = "Blink-rsa-Curt-iPad"
-}
