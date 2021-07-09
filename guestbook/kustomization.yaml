@@ -1,0 +1,12 @@
+namespace: guestbook
+
+bases:
+  - guestbook-namespace.yaml
+  - redis-leader-deployment.yaml
+  - redis-leader-service.yaml
+  - redis-follower-deployment.yaml
+  - redis-follower-service.yaml
+  - guestbook-deployment.yaml
+  - guestbook-service.yaml
+  - guestbook-ingress.yaml
+
