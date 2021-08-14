@@ -12,7 +12,7 @@ This uses digitalocean to spin up a kubernetes cluster using terraform.
   - kubectx [https://github.com/ahmetb/kubectx]
   - kubens [https://github.com/ahmetb/kubectx - yes, same as kubectx]
 3. Configure doctl to use your account API key
-4. Get another API key for terraform an put it in an environment variable called 'DIGITALOCEAN_TOKEN'
+4. Get another API key for terraform an put it in an environment variable called `DIGITALOCEAN_TOKEN`.
 
 ## Spin up
 
