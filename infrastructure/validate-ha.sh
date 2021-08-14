@@ -10,6 +10,6 @@ for cluster in $(doctl kubernetes cluster list -o json | jq -r '.[]["id"]'); do
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${DIGITALOCEAN_TOKEN}" \
   "https://api.digitalocean.com/v2/kubernetes/clusters/${cluster}" \
-  | jq .
+  | jq '.["kubernetes_cluster"] | {(.["name"]): {id: .["id"], ha: .["ha"]}}'
 done
 
