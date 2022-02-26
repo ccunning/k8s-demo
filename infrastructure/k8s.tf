@@ -1,7 +1,7 @@
 resource "digitalocean_kubernetes_cluster" "k8s-cluster-1" {
   name    = "k8s-cluster-1"
   region  = "nyc1"
-  version = "1.21.2-do.2"
+  version = "1.21.9-do.0"
   tags    = [
     "k8s:ha"
   ]
